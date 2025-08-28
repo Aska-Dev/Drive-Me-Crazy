@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"uiLayers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"uiLayers",
+  "parent":{
+    "name":"Common",
+    "path":"folders/Common.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

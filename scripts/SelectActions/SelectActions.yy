@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"SelectActions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SelectActions",
+  "parent":{
+    "name":"CardActions",
+    "path":"folders/CardActions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

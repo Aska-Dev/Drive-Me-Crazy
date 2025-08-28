@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__directives_class",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__directives_class",
+  "parent":{
+    "name":"Directives",
+    "path":"folders/Libs/Directives.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

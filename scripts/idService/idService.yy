@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"idService",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"idService",
+  "parent":{
+    "name":"Common",
+    "path":"folders/Common.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

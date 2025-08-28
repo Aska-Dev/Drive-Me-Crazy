@@ -1,0 +1,19 @@
+enum CONTROLLER_ACTIONS
+{
+    SELECTING,
+    IDLE
+}
+
+enum DUEL_MODES
+{
+    PLAYING,
+    SELECTING,
+    HANDLING_ACTION,
+    WAITING
+}
+
+enum TURN
+{
+    PLAYER,
+    ENEMY
+}

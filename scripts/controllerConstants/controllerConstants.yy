@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"controllerConstants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"controllerConstants",
+  "parent":{
+    "name":"Common",
+    "path":"folders/Common.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

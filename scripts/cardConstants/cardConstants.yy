@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cardConstants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cardConstants",
+  "parent":{
+    "name":"Common",
+    "path":"folders/Common.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

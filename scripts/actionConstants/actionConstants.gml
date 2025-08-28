@@ -1,0 +1,5 @@
+enum TARGET
+{
+    PLAYER,
+    ENEMY
+}

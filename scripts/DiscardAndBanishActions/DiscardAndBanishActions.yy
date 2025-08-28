@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DiscardAndBanishActions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DiscardAndBanishActions",
+  "parent":{
+    "name":"CardActions",
+    "path":"folders/CardActions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

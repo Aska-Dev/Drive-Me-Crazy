@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"actionConstants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"actionConstants",
+  "parent":{
+    "name":"Common",
+    "path":"folders/Common.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RacerResources",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RacerResources",
+  "parent":{
+    "name":"Racers",
+    "path":"folders/Racers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

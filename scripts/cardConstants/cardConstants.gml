@@ -1,0 +1,1 @@
+#macro CARD_CANVAS_SIZE 1.3
