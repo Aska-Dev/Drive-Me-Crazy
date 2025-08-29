@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"LvlDuel",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/LvlDuel/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

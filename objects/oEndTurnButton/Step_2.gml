@@ -1,5 +1,4 @@
-
-if(!active && oDuelController.turn == TURN.PLAYER)
+if(oDuelController.turn == TURN.PLAYER && active = false)
 {
     active = true;
 }

@@ -48,3 +48,18 @@ displayResources = function ()
     layer_text_text(lblControl, pControl);
     layer_text_text(lblFocus, pFocus);
 }
+
+displayEnemyResources = function ()
+{
+    var pSpeed = oDuelController.enemy.resources.speed;
+    var pControl = oDuelController.enemy.resources.control;
+    var pFocus = oDuelController.enemy.resources.focus;
+    
+    var lblSpeed = layer_text_get_id(UI_LAYER_DUEL, "enemySpeed")
+    var lblControl = layer_text_get_id(UI_LAYER_DUEL, "enemyControl")
+    var lblFocus = layer_text_get_id(UI_LAYER_DUEL, "enemyFocus")
+    
+    layer_text_text(lblSpeed, pSpeed);
+    layer_text_text(lblControl, pControl);
+    layer_text_text(lblFocus, pFocus);
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EnemyDeck",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EnemyDeck",
+  "parent":{
+    "name":"Decks",
+    "path":"folders/EnemyCards/Decks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

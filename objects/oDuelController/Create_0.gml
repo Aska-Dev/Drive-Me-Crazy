@@ -71,7 +71,7 @@ startPlayerTurn = function ()
 startDuel = function()
 {
     oRaceController.player.deck.shuffle();
-    drawCards(oRaceController.player.turnStartDrawAmount);
+    drawCards(oRaceController.player.duelStartDrawAmount);
 }
 
 // INIT DUELL
@@ -80,11 +80,11 @@ turn = TURN.PLAYER;
 
 mode = DUEL_MODES.PLAYING;
 
-enemy = new Racer();
-enemy.resources.speed = 5;
+enemy = new EnemyRacer();
 
 startDuel();
 
 /// INIT UI
 layer_set_visible(UI_LAYER_DUEL, true);
 
+instance_create_layer(0, room_height * 0.6, UI_LAYER_DUEL, oEndTurnButton);

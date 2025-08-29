@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EnemyCardsUseControl",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EnemyCardsUseControl",
+  "parent":{
+    "name":"Cards",
+    "path":"folders/EnemyCards/Cards.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

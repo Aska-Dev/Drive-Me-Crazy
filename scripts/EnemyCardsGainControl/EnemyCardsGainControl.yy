@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"CardGainControl",
+  "%Name":"EnemyCardsGainControl",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"CardGainControl",
+  "name":"EnemyCardsGainControl",
   "parent":{
     "name":"Cards",
     "path":"folders/EnemyCards/Cards.yy",
