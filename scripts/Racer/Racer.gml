@@ -18,13 +18,8 @@ function EnemyRacer() : Racer() constructor
 {
     setDeck = function ()
     {
-        var decks = 
-            [
-                new EnemyDeck_ControlToSpeed(),
-            ]
-        
-        var selection = irandom_range(0, array_length(decks) - 1);
-        return decks[selection]
+        var selection = irandom_range(0, array_length(global.enemyDecks) - 1);
+        return new global.enemyDecks[selection]();
     }
     
     deck = setDeck();

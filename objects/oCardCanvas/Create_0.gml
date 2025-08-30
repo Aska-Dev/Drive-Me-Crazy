@@ -8,6 +8,7 @@ hovering = false;
 // Has the player clicked on the card?
 clicking = false;
 // Should the click event trigger?
+isDisplay = false;
 active = true;
 
 

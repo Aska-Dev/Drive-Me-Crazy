@@ -16,6 +16,19 @@ function CardAction_Discard(_card) : CardAction() constructor
     }
 }
 
+/// DISCARD LATER
+function  CardAction_DiscardLater(_card) : CardAction() constructor 
+{
+    card = _card;
+    
+    run = function ()
+    {
+        oActionController.actionRunning = true;
+        array_push(oActionController.discardLaterCards, card);
+        oActionController.actionComplete = true;
+    }
+}
+
 /// BANISH
 function CardAction_Banish(_card) : CardAction() constructor 
 {

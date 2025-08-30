@@ -1,5 +1,8 @@
 showingCard = false;
+playingCard = false;
 card = undefined;
+
+oDuelController.enemyTurns++;
 
 var camWidth = camera_get_view_width(view_camera[0]);
 pointX = camWidth / 3.5;

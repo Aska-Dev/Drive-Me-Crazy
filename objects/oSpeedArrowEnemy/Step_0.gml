@@ -1,8 +1,13 @@
-if(oDuelController.enemy.resources.speed >= pos + 1)
+active = instance_exists(oDuelController);
+
+if(active)
 {
-    sprite_index = sprSpeedArrowFullEnemy;
-}
-else
-{
-    sprite_index = sprSpeedArrow;
+    if(oDuelController.enemy.resources.speed >= pos + 1)
+    {
+        sprite_index = sprSpeedArrowFullEnemy;
+    }
+    else
+    {
+        sprite_index = sprSpeedArrow;
+    };
 }

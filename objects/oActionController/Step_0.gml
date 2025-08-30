@@ -13,6 +13,7 @@ if(actionRunning && controllerAction == CONTROLLER_ACTIONS.SELECTING)
         
         card.canvasRef.x = cameraWidth / 2
         card.canvasRef.y = cameraHeight / 2
+        card.canvasRef.isDisplay = true;
         
         oDuelController.mode = DUEL_MODES.SELECTING;
     }
@@ -20,6 +21,12 @@ if(actionRunning && controllerAction == CONTROLLER_ACTIONS.SELECTING)
     {
         followUpAction.card = selectedCard;
         followUpAction.run();
+        
+        for(var i = 0; i < array_length(discardLaterCards); i++)
+        {
+            var discardCard = discardLaterCards[i];
+            new CardAction_Discard(discardCard).run();
+        }
         
         controllerAction = CONTROLLER_ACTIONS.IDLE;
     }

@@ -1,7 +1,3 @@
-showingCard = false;
-oDuelController.enemy.deck.discard(card);
-
-instance_destroy(card.canvasRef);
+playingCard = true;
 
 playCard(card);
-endTurn();

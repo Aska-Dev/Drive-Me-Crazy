@@ -7,9 +7,9 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_3607594B","path":"rooms/LvlDuel/LvlDuel.yy",},
-    {"name":"inst_128F6766","path":"rooms/LvlDuel/LvlDuel.yy",},
     {"name":"inst_565F6FBA","path":"rooms/LvlDuel/LvlDuel.yy",},
     {"name":"inst_11453512","path":"rooms/LvlDuel/LvlDuel.yy",},
+    {"name":"inst_13636531","path":"rooms/LvlDuel/LvlDuel.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -18,8 +18,10 @@
         {"$GMRInstance":"v2","%Name":"inst_11453512","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11453512","objectId":{"name":"oDuelController","path":"objects/oDuelController/oDuelController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-32.0,},
       ],"layers":[],"name":"Controller","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Racers","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_3607594B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3607594B","objectId":{"name":"oRacerDuelling","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":398.0,"y":208.0,},
-        {"$GMRInstance":"v2","%Name":"inst_128F6766","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_128F6766","objectId":{"name":"oRacerDuelling","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":398.0,"y":144.0,},
+        {"$GMRInstance":"v2","%Name":"inst_3607594B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3607594B","objectId":{"name":"oRacerDuelling","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRacerDuelling","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"propertyId":{"name":"isPlayer","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":398.0,"y":208.0,},
+        {"$GMRInstance":"v2","%Name":"inst_13636531","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13636531","objectId":{"name":"oRacerDuellingEnemy","path":"objects/oRacerDuellingEnemy/oRacerDuellingEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":398.0,"y":144.0,},
       ],"layers":[],"name":"Racers","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Track","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Track","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":14,"SerialiseWidth":96,"TileCompressedData":[
           -288,-2147483648,-96,589,-97,628,-2,358,-2,628,-2,358,-2,628,-2,358,-2,628,-2,358,-2,628,-2,358,-2,628,

@@ -2,6 +2,15 @@
   "$GMRoomUI":"",
   "%Name":"RoomUI",
   "children":[
+    {"$GMRUILayer":"v1","%Name":"reward_ui_layer","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"rewardCards","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":1,"value":100.0,},"justifyContent":1,"name":"rewardCards","nodeColour":4294082120,"positionBottom":{"unit":2,"value":49.0,},"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":100.0,},},
+        {"$GMRFlexPanel":"","%Name":"textVictory","alignItems":2,"children":[
+            {"$GMRTextItem":"v2","%Name":"text_6A1AC456","alignment":1,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"fontId":{"name":"fntSpeed","path":"fonts/fntSpeed/fntSpeed.yy",},"frameH":87.0,"frameW":360.875,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_6A1AC456","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":1.5,"text":"Du hast die Führung übernommen!","wrap":true,"x":-270.65625,"xorigin":0.0,"y":-191.5,"yorigin":0.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":87.0,},"justifyContent":1,"name":"textVictory","nodeColour":4294068391,"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":164.0,},},
+        {"$GMRFlexPanel":"","%Name":"textCardSelect","alignItems":2,"children":[
+            {"$GMRTextItem":"v2","%Name":"text_31797CFA","alignment":0,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"fontId":{"name":"fntBasic","path":"fonts/fntBasic/fntBasic.yy",},"frameH":0.0,"frameW":0.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_31797CFA","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.2,"scaleY":1.2,"text":"Wähle eine Karte um sie deinem Deck hinzuzufügen!","wrap":false,"x":0.0,"xorigin":0.0,"y":-50.0,"yorigin":0.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":33.0,},"justifyContent":1,"name":"textCardSelect","nodeColour":4285985352,"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":190.0,},},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"reward_ui_layer","nodeColour":4282928882,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"duel_ui_layer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"EnemyDeck","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":96.0,},"justifyContent":1,"name":"EnemyDeck","nodeColour":4282970792,"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":64.0,},},
         {"$GMRFlexPanel":"","%Name":"PlayerResources","alignItems":2,"children":[
@@ -152,7 +161,7 @@
         {"$GMRFlexPanel":"","%Name":"EnemyResourcesPanel","alignItems":2,"children":[
             {"$GMRSpriteGraphic":"v1","%Name":"graphic_66C0CE52","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_66C0CE52","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":-0.52,"scaleY":-1.0,"spriteId":{"name":"sprMetalBox","path":"sprites/sprMetalBox/sprMetalBox.yy",},"x":-278.0,"y":-196.0,},
           ],"flexDirection":0,"height":{"unit":3,"value":55.0,},"justifyContent":1,"name":"EnemyResourcesPanel","nodeColour":4286444104,"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":466.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"duel_ui_layer","nodeColour":4290726130,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"duel_ui_layer","nodeColour":4290726130,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
   ],
   "locked":false,
   "name":"RoomUI",

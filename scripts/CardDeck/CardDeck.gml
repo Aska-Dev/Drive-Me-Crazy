@@ -16,6 +16,14 @@ function CardDeck() constructor
         array_shuffle_ext(cards);
     }
     
+    shuffleDiscardIntoDeck = function ()
+    {
+        cards = array_concat(cards, discardedCards);
+        discardedCards = [];
+        
+        shuffle();
+    }
+    
     reset = function ()
     {
         cards = array_concat(cards, discardedCards);
@@ -33,11 +41,23 @@ function CardDeck() constructor
         // If deck is empty, shuffle and reset
         if(array_length(cards) <= 0)
         {
-            reset();
+            shuffleDiscardIntoDeck();
         }
         
         var drawnCard = array_pop(cards);
         return drawnCard;
+    }
+    
+    /// @return {Struct.Card}
+    peek = function ()
+    {
+        // If deck is empty, shuffle and reset
+        if(array_length(cards) <= 0)
+        {
+            shuffleDiscardIntoDeck();
+        }
+           
+        return array_last(cards);
     }
     
     /// @param {Real} amount
@@ -64,5 +84,11 @@ function CardDeck() constructor
     banish = function (card)
     {
         array_push(banishedCards, card);
+    }
+    
+    /// @param {Struct.Card} card
+    add = function (card)
+    {
+        array_push(cards, card);
     }
 }

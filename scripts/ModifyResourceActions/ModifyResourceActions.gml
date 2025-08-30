@@ -21,6 +21,33 @@ function CardAction_ModifySpeed(_target, _value) : CardAction() constructor
     };
 }
 
+/// STEAL SPEED
+function CardAction_StealSpeed(_target, _maxValue) : CardAction() constructor 
+{
+    target = _target;
+    maxValue = _maxValue;
+    
+    run = function ()
+    {
+        oActionController.actionRunning = true;
+        
+        if(target == TARGET.PLAYER)
+        {
+            stolenSpeed = min(maxValue, oRaceController.player.resources.speed);
+            oRaceController.player.resources.speed -= stolenSpeed;
+            oDuelController.enemy.resources.speed += stolenSpeed;
+        }
+        else
+        {
+            stolenSpeed = min(3,  oDuelController.enemy.resources.speed);
+            oRaceController.player.resources.speed += stolenSpeed;
+            oDuelController.enemy.resources.speed -= stolenSpeed;
+        }
+        
+        oActionController.actionComplete = true;
+    }
+}
+
 /// MODIFY CONTROL
 function CardAction_ModifyControl(_target, _value) : CardAction() constructor 
 {

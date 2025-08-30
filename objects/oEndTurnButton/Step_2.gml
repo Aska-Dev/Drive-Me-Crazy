@@ -1,7 +1,4 @@
-if(oDuelController.turn == TURN.PLAYER && active = false)
-{
-    active = true;
-}
+active = oDuelController.turn == TURN.PLAYER
 
 if(clicking && active)
 {

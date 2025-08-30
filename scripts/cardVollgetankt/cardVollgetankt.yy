@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"EnemyCardsGainControl",
+  "%Name":"cardVollgetankt",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"EnemyCardsGainControl",
+  "name":"cardVollgetankt",
   "parent":{
-    "name":"Cards",
-    "path":"folders/EnemyCards/Cards.yy",
+    "name":"Tier 2",
+    "path":"folders/Cards/Tier 2.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

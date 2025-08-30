@@ -13,5 +13,3 @@ buttonText = "Zug beenden"
 
 hovering = false;
 clicking = false;
-
-show_debug_message("I created the EndTurnButton!")

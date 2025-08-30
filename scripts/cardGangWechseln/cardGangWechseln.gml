@@ -3,8 +3,8 @@ function Card_GangWechseln() : Card() constructor
     name = "Gang wechseln";
     desc = "Lege eine Karte ab und ziehe eine neue Karte nach"
     
-    cost = new CardCost();
-    sprite = sprCardNeutral;
+    cost = new CardCost(0, 1, 0);
+    sprite = sprCardControl;
     
     actions =
     [

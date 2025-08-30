@@ -1,0 +1,1 @@
+oRaceController.player.resources.speed = 10;

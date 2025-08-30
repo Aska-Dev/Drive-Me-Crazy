@@ -7,7 +7,7 @@ else
     size = CARD_CANVAS_SIZE;
 }
 
-if(clicking && active)
+if(clicking && active && !isDisplay)
 {
     oDuelController.selectCard(card);
 }
