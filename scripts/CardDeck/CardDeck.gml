@@ -33,6 +33,8 @@ function CardDeck() constructor
         banishedCards = [];
         
         shuffle();
+        
+        return cards;
     }
     
     /// @return {Struct.Card}
@@ -72,6 +74,18 @@ function CardDeck() constructor
         }
         
         return drawn;
+    }
+    
+    /// @param {Struct.Card} card
+    removeFromCards = function (card)
+    {
+        for(var i = 0; i < array_length(cards); i++)
+        {
+            if(cards[i].cId == card.cId)
+            {
+                array_delete(cards, i, 1);
+            }
+        }
     }
     
     /// @param {Struct.Card} card

@@ -33,7 +33,10 @@ function EnemyDeck_Hinterhaeltig() : CardDeck() constructor
         new EnemyCard_StealSpeedThree(),
         new EnemyCard_Schlangenlinien(),
         new EnemyCard_GainControlTwo(),
+        new EnemyCard_GainControlOne(),
         new EnemyCard_Rauchwolke(),
+        new EnemyCard_Rauchwolke(),
+        new EnemyCard_GainSpeedOne(),
         new EnemyCard_Momentum()
     ]
 }

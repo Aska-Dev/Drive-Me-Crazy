@@ -18,13 +18,22 @@ player.deck.cards = [
 
 getNextEvent = function ()
 {
-    // 
+    if(laps % 3 == 0)
+    {
+        return BoxStop;
+    }
+    else
+    {
+        return LvlDuel;
+    }
 }
 
 nextEvent = function ()
 {
     laps++;
-    room_goto(LvlDuel);
+    
+    var nextEvent = getNextEvent();
+    room_goto(nextEvent);
 }
 
 nextEvent();

@@ -1,4 +1,5 @@
 // INIT GAME
+global.debug = false;
 randomize();
 
 global.enemyDecks = 
@@ -73,3 +74,5 @@ playMusic = function ()
     
     audio_play_sound(currentTrack, 100, false);
 }
+
+show_debug_overlay(global.debug);

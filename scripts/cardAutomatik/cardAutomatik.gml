@@ -3,7 +3,7 @@ function Card_Automatik() : Card() constructor
     name = "Automatik";
     desc = "Lege eine Karte ab und ziehe eine neue Karte nach"
     
-    cost = new CardCost();
+    cost = new CardCost(0, 0, 0, true);
     sprite = sprCardNeutral;
     
     actions =

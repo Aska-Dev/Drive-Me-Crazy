@@ -34,6 +34,11 @@ function Card() constructor
             return false;
         }
         
+        if(cost.needsOtherCards && array_length(actor.hand.cards) <= 1)
+        {
+            return false;
+        }
+        
         return true;
     }
     

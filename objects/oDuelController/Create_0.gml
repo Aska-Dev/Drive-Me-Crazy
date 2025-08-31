@@ -135,3 +135,11 @@ enemyTurns = 0;
 layer_set_visible(UI_LAYER_DUEL, true);
 
 button = instance_create_layer(0, 0, UI_LAYER_DUEL, oEndTurnButton);
+
+if(global.debug)
+{
+    duelView = dbg_view("Duel Overview", true);
+    enemySection = dbg_section("Enemy");
+    enemyRef = ref_create(enemy.deck.cards[0], "Enemy");
+    dbg_watch(enemyRef);
+}

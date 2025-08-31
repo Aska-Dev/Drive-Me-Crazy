@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":124.79773,
   "name":"sndMusicTrack1",
   "parent":{
     "name":"Music",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndMusicTrack1.mp3",
   "type":0,
-  "volume":0.4,
+  "volume":0.3,
 }
