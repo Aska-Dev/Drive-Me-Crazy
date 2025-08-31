@@ -32,7 +32,9 @@ function EnemyDeck_Hinterhaeltig() : CardDeck() constructor
         new EnemyCard_GainSpeedTwo(),
         new EnemyCard_StealSpeedThree(),
         new EnemyCard_Schlangenlinien(),
-        new EnemyCard_Rauchwolke()
+        new EnemyCard_GainControlTwo(),
+        new EnemyCard_Rauchwolke(),
+        new EnemyCard_Momentum()
     ]
 }
 
@@ -42,7 +44,6 @@ function EnemyDeck_FastAndFurious() : CardDeck() constructor
         [
             new EnemyCard_StealSpeedThree(),
             new EnemyCard_Vollgas(),
-            new EnemyCard_GainControlTwo(),
             new EnemyCard_GainControlTwo(),
             new EnemyCard_Schlangenlinien(),
             new EnemyCard_GainSpeedOne(),

@@ -134,4 +134,4 @@ enemyTurns = 0;
 /// INIT UI
 layer_set_visible(UI_LAYER_DUEL, true);
 
-button = instance_create_layer(0, room_height * 0.6, UI_LAYER_DUEL, oEndTurnButton);
+button = instance_create_layer(0, 0, UI_LAYER_DUEL, oEndTurnButton);

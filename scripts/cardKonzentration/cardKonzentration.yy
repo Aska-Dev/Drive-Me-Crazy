@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cardKonzentration",
   "parent":{
-    "name":"Tier 0",
-    "path":"folders/Cards/Tier 0.yy",
+    "name":"Tier 1",
+    "path":"folders/Cards/Tier 1.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

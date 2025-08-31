@@ -47,8 +47,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Cars",
-    "path":"folders/Racers/Sprites/Cars.yy",
+    "name":"Inferno",
+    "path":"folders/Racers/Sprites/Cars/Inferno.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

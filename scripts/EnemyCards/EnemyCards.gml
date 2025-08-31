@@ -51,11 +51,11 @@ function EnemyCard_GainSpeedTwo() : Card() constructor
 function EnemyCard_StealSpeedThree() : Card() constructor 
 {
     name = "Im Windschatten";
-    desc = "Klaue dem Gegner bis zu 3 [sprCardIconSpeed] und erhalte sie selbst";
+    desc = "Klaue dem Gegner bis zu 2 [sprCardIconSpeed] und erhalte sie selbst";
     
     sprite = sprCardSpeed;
     
-    actions = [new CardAction_StealSpeed(TARGET.PLAYER, 3)]
+    actions = [new CardAction_StealSpeed(TARGET.PLAYER, 2)]
 }
 
 function EnemyCard_Ausbremsen() : Card() constructor 
@@ -85,6 +85,13 @@ function EnemyCard_Schlangenlinien() : Card() constructor
                     return oDuelController.enemy.resources.control >= 2;
                 },
                 new CardAction_ModifySpeed(TARGET.PLAYER, -2)
+            ),
+            new CardAction_IfThenPlay
+            (
+                function () {
+                    return oDuelController.enemy.resources.control >= 2;
+                },
+                new CardAction_ModifyControl(TARGET.ENEMY, -2)
             )
         ]
 }

@@ -1,0 +1,1 @@
+oDuelController.enemy.resources.speed = 10;

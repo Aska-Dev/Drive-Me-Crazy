@@ -22,6 +22,21 @@ function EnemyRacer() : Racer() constructor
         return new global.enemyDecks[selection]();
     }
     
+    setSprite = function ()
+    {
+        var sprites = 
+            [
+                sprCarDutchman_Driving,
+                sprCarVoyager_Driving,
+                sprCarViper_Driving,
+                sprCarTurtle_Driving
+            ]
+           
+        var spriteRoll = irandom_range(0, array_length(sprites) - 1);
+        
+        return sprites[spriteRoll];
+    }
+    
     deck = setDeck();
     deck.shuffle();
 }
