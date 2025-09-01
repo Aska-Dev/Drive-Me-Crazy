@@ -3,16 +3,16 @@ function CardAction_Discard(_card) : CardAction() constructor
 {
     card = _card;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
         oRaceController.player.deck.discard(card);
         oRaceController.player.hand.remove(card);
         
         instance_destroy(card.canvasRef)
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }
 
@@ -21,11 +21,11 @@ function  CardAction_DiscardLater(_card) : CardAction() constructor
 {
     card = _card;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         array_push(oActionController.discardLaterCards, card);
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }
 
@@ -34,15 +34,15 @@ function CardAction_Banish(_card) : CardAction() constructor
 {
     card = _card;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
         oRaceController.player.deck.banish(card);
         oRaceController.player.hand.remove(card);
         
         instance_destroy(card.canvasRef)
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }

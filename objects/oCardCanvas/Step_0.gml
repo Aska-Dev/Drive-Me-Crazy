@@ -9,5 +9,5 @@ else
 
 if(clicking && active && !isDisplay)
 {
-    oDuelController.selectCard(card);
+    oDuelPlayerController.setSelectedCard(card);
 }

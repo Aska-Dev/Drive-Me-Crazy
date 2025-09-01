@@ -5,7 +5,7 @@ function Card_UebungMachtDenMeister() : Card() constructor
     
     actions = 
         [
-            new CardAction_TransformAllControlToSpeed(TARGET.PLAYER),
+            new CardAction_TransformAllControlToSpeed(RACERS.PLAYER),
             new CardAction_Discard(self)
         ]
 }

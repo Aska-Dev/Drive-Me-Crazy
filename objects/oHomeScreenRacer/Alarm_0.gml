@@ -1,1 +1,3 @@
- speed = 10;
+speed = 10;
+settingOff = false;
+image_angle = 270;

@@ -5,7 +5,7 @@ function EnemyCard_GainControlOne() : Card() constructor
     
     sprite = sprCardControl;
     
-    actions = [new CardAction_ModifyControl(TARGET.ENEMY, 1)]
+    actions = [new CardAction_ModifyControl(RACERS.ENEMY, 1)]
 }
 
 function EnemyCard_GainControlTwo() : Card() constructor 
@@ -15,7 +15,7 @@ function EnemyCard_GainControlTwo() : Card() constructor
     
     sprite = sprCardControl;
     
-    actions = [new CardAction_ModifyControl(TARGET.ENEMY, 2)]
+    actions = [new CardAction_ModifyControl(RACERS.ENEMY, 2)]
 }
 
 function EnemyCard_ControlToSpeed() : Card() constructor 
@@ -25,7 +25,7 @@ function EnemyCard_ControlToSpeed() : Card() constructor
     
     sprite = sprCardNeutral;
     
-    actions = [new CardAction_TransformAllControlToSpeed(TARGET.ENEMY)]
+    actions = [new CardAction_TransformAllControlToSpeed(RACERS.ENEMY)]
 }
 
 function EnemyCard_GainSpeedOne() : Card() constructor 
@@ -35,7 +35,7 @@ function EnemyCard_GainSpeedOne() : Card() constructor
     
     sprite = sprCardSpeed;
     
-    actions = [new CardAction_ModifySpeed(TARGET.ENEMY, 1)]
+    actions = [new CardAction_ModifySpeed(RACERS.ENEMY, 1)]
 }
 
 function EnemyCard_GainSpeedTwo() : Card() constructor 
@@ -45,7 +45,7 @@ function EnemyCard_GainSpeedTwo() : Card() constructor
     
     sprite = sprCardSpeed;
     
-    actions = [new CardAction_ModifySpeed(TARGET.ENEMY, 2)]
+    actions = [new CardAction_ModifySpeed(RACERS.ENEMY, 2)]
 }
 
 function EnemyCard_StealSpeedThree() : Card() constructor 
@@ -55,7 +55,7 @@ function EnemyCard_StealSpeedThree() : Card() constructor
     
     sprite = sprCardSpeed;
     
-    actions = [new CardAction_StealSpeed(TARGET.PLAYER, 2)]
+    actions = [new CardAction_StealSpeed(RACERS.PLAYER, 2)]
 }
 
 function EnemyCard_Ausbremsen() : Card() constructor 
@@ -65,7 +65,7 @@ function EnemyCard_Ausbremsen() : Card() constructor
     
     sprite = sprCardSpeed;
     
-    actions = [new CardAction_ModifySpeed(TARGET.PLAYER, -1)]
+    actions = [new CardAction_ModifySpeed(RACERS.PLAYER, -1)]
 }
 
 function EnemyCard_Schlangenlinien() : Card() constructor 
@@ -84,14 +84,14 @@ function EnemyCard_Schlangenlinien() : Card() constructor
                 function () {
                     return oDuelController.enemy.resources.control >= 2;
                 },
-                new CardAction_ModifySpeed(TARGET.PLAYER, -2)
+                new CardAction_ModifySpeed(RACERS.PLAYER, -2)
             ),
             new CardAction_IfThenPlay
             (
                 function () {
                     return oDuelController.enemy.resources.control >= 2;
                 },
-                new CardAction_ModifyControl(TARGET.ENEMY, -2)
+                new CardAction_ModifyControl(RACERS.ENEMY, -2)
             )
         ]
 }
@@ -102,7 +102,7 @@ function EnemyCard_Rauchwolke() : Card() constructor
     desc = "Der Gegner verliert 1 [sprCardIconFocus]";
     
     sprite = sprCardFocus;
-    actions = [new CardAction_ModifyFocus(TARGET.PLAYER, -1)]
+    actions = [new CardAction_ModifyFocus(RACERS.PLAYER, -1)]
 }
 
 function EnemyCard_Rammen() : Card() constructor 
@@ -129,5 +129,5 @@ function EnemyCard_Vollgas() : Card() constructor
     desc = "+2 [sprCardIconSpeed] und spiele 1 weitere Karte";
     
     sprite = sprCardSpeed;
-    actions = [new CardAction_ModifySpeed(TARGET.ENEMY, 2), new CardAction_AdditionalEnemyTurn(1)]
+    actions = [new CardAction_ModifySpeed(RACERS.ENEMY, 2), new CardAction_AdditionalEnemyTurn(1)]
 }

@@ -10,8 +10,8 @@
   "name":"oDuelEnemyController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Duels",
-    "path":"folders/Duels.yy",
+    "name":"Controller",
+    "path":"folders/Duels/Controller.yy",
   },
   "parentObjectId":null,
   "persistent":false,

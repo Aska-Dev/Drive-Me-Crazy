@@ -1,27 +1,21 @@
 {
   "$GMRoom":"v1",
-  "%Name":"LvlDuel",
-  "creationCodeFile":"rooms/LvlDuel/RoomCreationCode.gml",
+  "%Name":"rmDuel",
+  "creationCodeFile":"rooms/rmDuel/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_3607594B","path":"rooms/LvlDuel/LvlDuel.yy",},
-    {"name":"inst_565F6FBA","path":"rooms/LvlDuel/LvlDuel.yy",},
-    {"name":"inst_11453512","path":"rooms/LvlDuel/LvlDuel.yy",},
-    {"name":"inst_13636531","path":"rooms/LvlDuel/LvlDuel.yy",},
+    {"name":"inst_705FBB80","path":"rooms/rmDuel/rmDuel.yy",},
+    {"name":"inst_4309D321","path":"rooms/rmDuel/rmDuel.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Controller","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_565F6FBA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_565F6FBA","objectId":{"name":"oDuelPlayerUiController","path":"objects/oDuelPlayerUiController/oDuelPlayerUiController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":-32.0,},
-        {"$GMRInstance":"v2","%Name":"inst_11453512","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11453512","objectId":{"name":"oDuelController","path":"objects/oDuelController/oDuelController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-32.0,},
+        {"$GMRInstance":"v2","%Name":"inst_705FBB80","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_705FBB80","objectId":{"name":"oDuelController","path":"objects/oDuelController/oDuelController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":0.0,},
       ],"layers":[],"name":"Controller","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Racers","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_3607594B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3607594B","objectId":{"name":"oRacerDuelling","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRacerDuelling","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"propertyId":{"name":"isPlayer","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":398.0,"y":208.0,},
-        {"$GMRInstance":"v2","%Name":"inst_13636531","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13636531","objectId":{"name":"oRacerDuellingEnemy","path":"objects/oRacerDuellingEnemy/oRacerDuellingEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":1.0,"scaleY":1.0,"x":398.0,"y":144.0,},
+        {"$GMRInstance":"v2","%Name":"inst_4309D321","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4309D321","objectId":{"name":"oTrackCamera","path":"objects/oTrackCamera/oTrackCamera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.0,"scaleY":2.0,"x":368.0,"y":160.0,},
       ],"layers":[],"name":"Racers","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Track","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Track","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":14,"SerialiseWidth":96,"TileCompressedData":[
           -36,-2147483648,2,792,793,-78,-2147483648,1,832,-15,-2147483648,2,831,832,-6,-2147483648,2,792,793,-16,
@@ -81,10 +75,10 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"tsVulcano","path":"tilesets/tsVulcano/tsVulcano.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"LvlDuel",
+  "name":"rmDuel",
   "parent":{
-    "name":"Duels",
-    "path":"folders/Duels.yy",
+    "name":"Room",
+    "path":"folders/Duels/Room.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
@@ -104,7 +98,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":398,"hport":1080,"hspeed":-1,"hview":448,"inherit":false,"objectId":{"name":"oRacerDuelling","path":"objects/oRacerDuelling/oRacerDuelling.yy",},"vborder":250,"visible":true,"vspeed":-1,"wport":1920,"wview":796,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":398,"hport":1080,"hspeed":-1,"hview":448,"inherit":false,"objectId":{"name":"oTrackCamera","path":"objects/oTrackCamera/oTrackCamera.yy",},"vborder":250,"visible":true,"vspeed":-1,"wport":1920,"wview":796,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},

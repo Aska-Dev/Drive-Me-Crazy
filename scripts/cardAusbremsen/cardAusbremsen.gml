@@ -8,7 +8,7 @@ function Card_Ausbremsen() : Card() constructor
     
     actions =
     [
-        new CardAction_ModifySpeed(TARGET.ENEMY, -2),
+        new CardAction_ModifySpeed(RACERS.ENEMY, -2),
         new CardAction_Discard(self)
     ]
 }

@@ -8,7 +8,7 @@ function Card_Ausmanoevrieren() : Card() constructor
     
     actions =
     [
-        new CardAction_ModifyControl(TARGET.ENEMY, -2),
+        new CardAction_ModifyControl(RACERS.ENEMY, -2),
         new CardAction_Discard(self)
     ]
 }

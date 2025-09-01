@@ -8,7 +8,7 @@ function Card_Bremsen() : Card() constructor
     
     actions =
     [
-        new CardAction_ModifyControl(TARGET.PLAYER, 3),
+        new CardAction_ModifyControl(RACERS.PLAYER, 3),
         new CardAction_Discard(self)
     ]
 }

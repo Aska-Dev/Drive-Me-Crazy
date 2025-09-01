@@ -33,6 +33,8 @@
     {"name":"inst_68DB43DF","path":"rooms/Homemenu/Homemenu.yy",},
     {"name":"inst_438D0BAB","path":"rooms/Homemenu/Homemenu.yy",},
     {"name":"inst_240F54CC","path":"rooms/Homemenu/Homemenu.yy",},
+    {"name":"inst_3E892EA5","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_13AE3F6B","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -85,8 +87,8 @@
   ],
   "name":"Homemenu",
   "parent":{
-    "name":"Level",
-    "path":"folders/Level.yy",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

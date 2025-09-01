@@ -8,7 +8,7 @@ function Card_InDerZone() : Card() constructor
     
     actions =
     [
-        new CardAction_ModifyControl(TARGET.PLAYER, 2),
+        new CardAction_ModifyControl(RACERS.PLAYER, 2),
         new CardAction_DrawCards(1),
         new CardAction_Discard(self)
     ]

@@ -1,4 +1,4 @@
-speed = 8;
+image_angle = 270;
 
 // Set random image_index
 var frames = sprite_get_number(sprite_index)

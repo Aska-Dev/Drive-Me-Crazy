@@ -2,12 +2,12 @@ function CardAction_DrawCards(_amount) : CardAction() constructor
 {
     amount = _amount;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        oDuelController.drawCards(amount);
+        oDuelPlayerController.drawCards(amount);
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }

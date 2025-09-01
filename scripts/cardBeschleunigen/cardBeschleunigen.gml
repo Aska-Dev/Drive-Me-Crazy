@@ -7,7 +7,7 @@ function Card_Beschleunigen() : Card() constructor
     
     actions = 
     [
-        new CardAction_ModifySpeed(TARGET.PLAYER, 1),
+        new CardAction_ModifySpeed(RACERS.PLAYER, 1),
         new CardAction_Discard(self)
     ]
 }

@@ -1,22 +1,26 @@
-if(oDuelController.winner != undefined)
+if(actor != undefined && actor.finished)
 {
-    instance_destroy(self);
-}
-
-if(card != undefined)
-{
-    with(card.canvasRef)
+    // Destroy the canvas and discard the card
+    oDuelController.enemy.deck.discard(card);
+    instance_destroy(card.canvasRef);
+    
+    // Destroy the card actor and set the duel phase 
+    instance_destroy(actor);
+    actor = undefined;
+    oDuelController.currentPhase = DUEL_PHASES.ENEMY_PLAYING_CARD;
+    
+    turns--;
+    if(turns <= 0)
     {
-        if(y >= room_height * 0.35)
-        {
-            speed = 0;
-        }
+        endTurn();
+    }
+    else
+    {
+        spawnCard();
     }
 }
 
-if(playingCard && !instance_exists(oActionController))
+if(card.canvasRef != undefined && card.canvasRef.y >= ENEMY_CARD_DESTINATION_Y)
 {
-    oDuelController.enemy.deck.discard(card);
-    instance_destroy(card.canvasRef);
-    endTurn();
+    card.canvasRef.speed = 0;
 }

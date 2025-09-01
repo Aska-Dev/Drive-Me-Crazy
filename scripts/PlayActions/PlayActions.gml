@@ -2,13 +2,13 @@ function CardAction_PlayCardForFree(_card) : CardAction() constructor
 {
     card = _card;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        oDuelController.playCard(oRaceController.player, card, false);
+        oDuelPlayerController.playCard(card, false);
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }
 
@@ -16,13 +16,13 @@ function CardAction_AdditionalEnemyTurn(_amount): CardAction() constructor
 {
     amount = _amount;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        oDuelController.enemyTurnMod += amount;
+        oDuelEnemyController.turns += amount;
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }
 
@@ -33,15 +33,15 @@ function CardAction_IfThenPlay(_condition, _action): CardAction() constructor
     
     run = function ()
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
         if(condition())
         {
-            action.run();
+            action.run(actor);
         }
         else
         {
-            oActionController.actionComplete = true;
+            actor.actionComplete = true;
         }
     }
 }

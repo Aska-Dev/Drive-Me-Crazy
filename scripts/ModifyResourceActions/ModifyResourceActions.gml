@@ -4,11 +4,11 @@ function CardAction_ModifySpeed(_target, _value) : CardAction() constructor
     target = _target;
     value = _value;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        if(target == TARGET.PLAYER)
+        if(target == RACERS.PLAYER)
         {
             oRaceController.player.resources.speed = max(0, oRaceController.player.resources.speed + value);
         }
@@ -17,7 +17,7 @@ function CardAction_ModifySpeed(_target, _value) : CardAction() constructor
             oDuelController.enemy.resources.speed = max(0, oDuelController.enemy.resources.speed + value);
         }
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     };
 }
 
@@ -27,11 +27,11 @@ function CardAction_StealSpeed(_target, _maxValue) : CardAction() constructor
     target = _target;
     maxValue = _maxValue;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        if(target == TARGET.PLAYER)
+        if(target == RACERS.PLAYER)
         {
             stolenSpeed = min(maxValue, oRaceController.player.resources.speed);
             oRaceController.player.resources.speed -= stolenSpeed;
@@ -44,7 +44,7 @@ function CardAction_StealSpeed(_target, _maxValue) : CardAction() constructor
             oDuelController.enemy.resources.speed -= stolenSpeed;
         }
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }
 
@@ -54,11 +54,11 @@ function CardAction_ModifyControl(_target, _value) : CardAction() constructor
     target = _target;
     value = _value;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        if(target == TARGET.PLAYER)
+        if(target == RACERS.PLAYER)
         {
             oRaceController.player.resources.control = max(0, oRaceController.player.resources.control + value);
         }
@@ -67,7 +67,7 @@ function CardAction_ModifyControl(_target, _value) : CardAction() constructor
             oDuelController.enemy.resources.control = max(0, oDuelController.enemy.resources.control + value);
         }
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     };
 }
 
@@ -76,11 +76,11 @@ function CardAction_TransformAllControlToSpeed(_target) : CardAction() construct
 {
     target = _target;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        if(target == TARGET.PLAYER)
+        if(target == RACERS.PLAYER)
         {
             oRaceController.player.resources.speed += oRaceController.player.resources.control;
             oRaceController.player.resources.control = 0;
@@ -91,7 +91,7 @@ function CardAction_TransformAllControlToSpeed(_target) : CardAction() construct
             oDuelController.enemy.resources.control = 0;
         }
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     }
 }
 
@@ -101,11 +101,11 @@ function CardAction_ModifyFocus(_target, _value) : CardAction() constructor
     target = _target;
     value = _value;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
-        if(target == TARGET.PLAYER)
+        if(target == RACERS.PLAYER)
         {
             oRaceController.player.resources.focus = max(0, oRaceController.player.resources.focus + value);
         }
@@ -114,6 +114,6 @@ function CardAction_ModifyFocus(_target, _value) : CardAction() constructor
             oDuelController.enemy.resources.focus = max(0, oDuelController.enemy.resources.focus + value);
         }
         
-        oActionController.actionComplete = true;
+        actor.actionComplete = true;
     };
 }

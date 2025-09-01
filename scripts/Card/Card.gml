@@ -11,30 +11,32 @@ function Card() constructor
     cost = new CardCost();
     
     sprite = sprCardNeutral;
+    
+    actorRef = undefined;
     canvasRef = undefined;
     
     /// METHODS
     
-    /// @param {Struct.Racer} actor
+    /// @param {Struct.Racer} racer
     /// @return {Bool}
-    isPlayable = function (actor)
+    isPlayable = function (racer)
     {
-        if(actor.resources.speed < cost.speed)
+        if(racer.resources.speed < cost.speed)
         {
             return false;
         }
         
-        if(actor.resources.control < cost.control)
+        if(racer.resources.control < cost.control)
         {
             return false;
         }
         
-        if(actor.resources.focus < cost.focus)
+        if(racer.resources.focus < cost.focus)
         {
             return false;
         }
         
-        if(cost.needsOtherCards && array_length(actor.hand.cards) <= 1)
+        if(cost.needsOtherCards && array_length(racer.hand.cards) <= 1)
         {
             return false;
         }
@@ -42,11 +44,11 @@ function Card() constructor
         return true;
     }
     
-    /// @param {Struct.Racer} actor
-    payCost = function (actor)
+    /// @param {Struct.Racer} racer
+    payCost = function (racer)
     {
-        actor.resources.speed -= cost.speed;
-        actor.resources.control -= cost.control;
-        actor.resources.focus -= cost.focus;
+        racer.resources.speed -= cost.speed;
+        racer.resources.control -= cost.control;
+        racer.resources.focus -= cost.focus;
     }
 }

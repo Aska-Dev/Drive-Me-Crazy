@@ -1,5 +1,4 @@
-speed = 8;
-
+image_angle = 270;
 sprite_index = oDuelController.enemy.setSprite();
 
 // Set random image_index

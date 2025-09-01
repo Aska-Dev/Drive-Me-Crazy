@@ -1,14 +1,8 @@
-if(oRaceController.player.resources.speed >= 10)
-{
-    winner = TURN.PLAYER;
-}
+// Check if one racer has won the duel
+checkForWinner();
 
-if(enemy.resources.speed >= 10)
+// Wait until the winning animation is done and then goto the reward or lose room
+if(seqWinning != undefined && layer_sequence_is_finished(seqWinning))
 {
-    winner = TURN.ENEMY;
-}
-
-if(turn == TURN.PLAYER && array_length(oRaceController.player.hand.cards) == 0)
-{
-    changeTurn();
+    room_goto(roomAfterFinish);
 }

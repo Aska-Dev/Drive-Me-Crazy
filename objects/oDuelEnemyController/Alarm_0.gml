@@ -1,3 +1,1 @@
-playingCard = true;
-
-playCard(card);
+actor = instance_create_layer(-10, -10, "Controller", oCardActor, {card: card});

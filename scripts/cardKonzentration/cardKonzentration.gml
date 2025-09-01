@@ -7,7 +7,7 @@ function Card_Konzentration() : Card() constructor
     
     actions = 
     [
-        new CardAction_ModifyFocus(TARGET.PLAYER, 1),
+        new CardAction_ModifyFocus(RACERS.PLAYER, 1),
         new CardAction_Discard(self)
     ]  
 }

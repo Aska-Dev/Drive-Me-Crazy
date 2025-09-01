@@ -7,7 +7,7 @@ function Card_PerfekterStart() : Card() constructor
     
     actions = 
     [
-        new CardAction_ModifySpeed(TARGET.PLAYER, 3),
+        new CardAction_ModifySpeed(RACERS.PLAYER, 3),
         new CardAction_Banish(self)
     ]  
 }

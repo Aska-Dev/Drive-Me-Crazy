@@ -1,6 +1,6 @@
 hovering = position_meeting(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), self);
 clicking = hovering && mouse_check_button_pressed(mb_left);
 
-active = oDuelController.turn == TURN.PLAYER || (instance_exists(oActionController) && oActionController.controllerAction == CONTROLLER_ACTIONS.SELECTING);
+active = oDuelController.activeRacer == RACERS.PLAYER;
 
-isPlayable = card.isPlayable(oRaceController.player)
+isPlayable = card.isPlayable(oRaceController.player);

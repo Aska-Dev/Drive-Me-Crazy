@@ -8,7 +8,7 @@ function Card_Hochschalten() : Card() constructor
     
     actions =
     [
-        new CardAction_ModifySpeed(TARGET.PLAYER, 2),
+        new CardAction_ModifySpeed(RACERS.PLAYER, 2),
         new CardAction_Discard(self)
     ]
 }

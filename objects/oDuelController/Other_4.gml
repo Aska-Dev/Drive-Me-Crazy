@@ -1,2 +1,1 @@
-resetPlayerResources(); 
 startDuel();

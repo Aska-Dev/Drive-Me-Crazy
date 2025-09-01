@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"actionConstants",
+  "%Name":"DuelWinCondition",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"actionConstants",
+  "name":"DuelWinCondition",
   "parent":{
-    "name":"Common",
-    "path":"folders/Common.yy",
+    "name":"Duels",
+    "path":"folders/Duels.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -24,7 +24,7 @@ getNextEvent = function ()
     }
     else
     {
-        return LvlDuel;
+        return rmDuel;
     }
 }
 

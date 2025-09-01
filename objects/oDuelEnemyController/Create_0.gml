@@ -1,49 +1,37 @@
-showingCard = false;
-playingCard = false;
-card = undefined;
+// #############################################
+// PROPERTIES
 
-oDuelController.enemyTurns++;
+turns = 1;
+card = oDuelController.enemy.deck.drawOne();
+actor = undefined;
 
-var camWidth = camera_get_view_width(view_camera[0]);
-pointX = camWidth / 3.5;
-pointY = room_height * 0.35;
+#macro ENEMY_CARD_DESTINATION_Y room_height * 0.3
 
-/// METHODS
+// #############################################
+// INIT METHODS
 
 endTurn = function ()
 {
-    oDuelController.changeTurn();
+    oDuelController.nextTurn();
     instance_destroy(self);
 }
 
-drawCard = function ()
+spawnCard = function ()
 {
-    card = oDuelController.enemy.deck.drawOne();
-    var cardCanvas = instance_create_layer(pointX, -100, UI_LAYER_DUEL, oCardCanvas, {card: card})
-    with(cardCanvas)
+    var cameraWidth = camera_get_view_width(view_camera[0]);
+    var pX = cameraWidth * 0.36;
+    
+    var canvas = instance_create_layer(pX, 0, UI_LAYER_DUEL, oCardCanvas, {card: card});
+    with(canvas)
     {
-        var camWidth = camera_get_view_width(view_camera[0]);
-        move_towards_point(camWidth / 3.5, room_height * 0.35, 6);
+        move_towards_point(x, ENEMY_CARD_DESTINATION_Y, 6);
+        active = false;
     }
-    
-    cardCanvas.active = false;
-    
-    showingCard = true;
-    alarm[0] = game_get_speed(gamespeed_fps) * 2.5;
-    
-    return card;
+
+    alarm[0] = game_get_speed(gamespeed_fps) * 2;
 }
 
-/// @param {Struct.Card} card
-playCard = function (card)
-{
-    mode = DUEL_MODES.HANDLING_ACTION;
-    instance_create_layer(-10, -10, "Controller", oActionController, {card : card})
-}
+// #############################################
+// RUN AT CREATION
 
-playTurn = function ()
-{
-    var card = drawCard();
-}
-
-playTurn();
+spawnCard();

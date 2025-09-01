@@ -2,17 +2,17 @@ function CardAction_SelectCardAnd(_cardAction) : CardAction() constructor
 {
     action = _cardAction;
     
-    run = function ()
+    run = function (actor)
     {
-        oActionController.actionRunning = true;
+        actor.actionRunning = true;
         
         if(array_length(oRaceController.player.hand.cards) <= 0)
         {
-            oActionController.actionComplete = true;
+            actor.actionComplete = true;
             return;
         }
         
-        oActionController.controllerAction = CONTROLLER_ACTIONS.SELECTING;
-        oActionController.followUpAction = action;
+        array_insert(actor.actions, actor.currentActionPos + 1, action)
+        actor.waitingForSelection = true;
     }
 }

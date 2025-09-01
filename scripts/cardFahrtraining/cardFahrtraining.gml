@@ -7,7 +7,7 @@ function Card_Fahrtraining() : Card() constructor
     
     actions = 
     [
-        new CardAction_ModifyControl(TARGET.PLAYER, 1),
+        new CardAction_ModifyControl(RACERS.PLAYER, 1),
         new CardAction_Discard(self)
     ]  
 }
