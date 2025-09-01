@@ -9,8 +9,8 @@
   "name":"oDuelPlayerUiController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controller",
-    "path":"folders/Controller.yy",
+    "name":"Duels",
+    "path":"folders/Duels.yy",
   },
   "parentObjectId":null,
   "persistent":false,

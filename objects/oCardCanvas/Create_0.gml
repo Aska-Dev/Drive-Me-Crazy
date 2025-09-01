@@ -11,6 +11,8 @@ clicking = false;
 isDisplay = false;
 active = true;
 
+isPlayable = true;
+notPlayableTextAlpha = 0.6;
 
 // SET THE SPRITE TEMPLATE
 sprite_index = card.sprite;
@@ -31,7 +33,14 @@ drawName = function ()
     var textY = y - sprite_height * 0.36;
     var textX = x;
     
+    var alpha = 1;
+    if(!isPlayable)
+    {
+        alpha = notPlayableTextAlpha;
+    }
+    
     scribble(card.name)
+        .blend(c_white, alpha)
         .align(fa_center, fa_middle)
         .scale_to_box(sprite_width - sprite_width / 4, 25)
         .draw(textX, textY);
@@ -42,7 +51,14 @@ drawDesc = function ()
     var textY = y + sprite_height * 0.15;
     var textX = x;   
      
+    var alpha = 1;
+    if(!isPlayable)
+    {
+        alpha = notPlayableTextAlpha;
+    }
+    
     scribble(card.desc)
+        .blend(c_white, alpha)
         .align(fa_center, fa_middle)
         .scale(0.6)
         .fit_to_box(originalSpriteWidth - originalSpriteWidth / 4, sprite_height * 0.6)
@@ -78,7 +94,15 @@ drawCosts = function ()
     
     if(draw)
     {
+         var alpha = 1;
+        if(!isPlayable)
+        {
+            alpha = notPlayableTextAlpha;
+        }
+    
+        
         scribble(costText)
+            .blend(c_white, alpha)
             .align(fa_center, fa_middle)
             .scale(0.5)
             .draw(textX, textY);
@@ -87,8 +111,6 @@ drawCosts = function ()
 
 displayPlayability = function ()
 {
-    var isPlayable = card.isPlayable(oRaceController.player)
-
     if(!isPlayable)
     {
         image_blend = c_gray;

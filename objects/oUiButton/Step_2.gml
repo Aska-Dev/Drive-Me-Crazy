@@ -1,0 +1,4 @@
+if(clicking && active)
+{
+    action();
+}

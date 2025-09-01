@@ -3,9 +3,6 @@
   "%Name":"oStartGameButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -14,10 +11,13 @@
   "name":"oStartGameButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/UI.yy",
+    "name":"Buttons",
+    "path":"folders/UI/Buttons.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oUiButton",
+    "path":"objects/oUiButton/oUiButton.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprEndTurnButton",
-    "path":"sprites/sprEndTurnButton/sprEndTurnButton.yy",
+    "name":"sprButtonActive",
+    "path":"sprites/sprButtonActive/sprButtonActive.yy",
   },
   "spriteMaskId":null,
   "visible":true,

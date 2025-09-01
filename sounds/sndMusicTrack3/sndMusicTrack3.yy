@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":66.78494,
+  "duration":129.48,
   "name":"sndMusicTrack3",
   "parent":{
     "name":"Music",

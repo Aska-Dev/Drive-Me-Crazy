@@ -1,7 +1,9 @@
-activeSprite = sprEndTurnButton;
-inactiveSprite = sprEndTurnButtonClicked;
+event_inherited();
 
 buttonText = "Spiel beenden"
 
-hovering = false;
-clicking = false;
+action = function ()
+{
+    audio_play_sound(sndSfxClick, 100, false);
+    game_end();
+}

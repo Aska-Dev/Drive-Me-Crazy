@@ -83,8 +83,8 @@
   ],
   "name":"LvlDuel",
   "parent":{
-    "name":"Level",
-    "path":"folders/Level.yy",
+    "name":"Duels",
+    "path":"folders/Duels.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

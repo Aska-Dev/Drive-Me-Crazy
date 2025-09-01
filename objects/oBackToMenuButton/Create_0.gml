@@ -1,7 +1,10 @@
-activeSprite = sprEndTurnButton;
-inactiveSprite = sprEndTurnButtonClicked;
+// Inherit the parent event
+event_inherited();
 
 buttonText = "Zum Menü"
 
-hovering = false;
-clicking = false;
+action = function ()
+{
+    audio_play_sound(sndSfxClick, 100, false);
+    room_goto(Homemenu);
+}

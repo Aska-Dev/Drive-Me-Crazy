@@ -1,4 +1,4 @@
-buttonText = "Einstellungen"
+event_inherited();
 
-hovering = false;
-clicking = false;
+buttonText = "Einstellungen"
+active = false;

@@ -1,4 +1,4 @@
-buttonText = "Charakterauswahl"
+event_inherited();
 
-hovering = false;
-clicking = false;
+buttonText = "Charakterauswahl"
+active = false;
