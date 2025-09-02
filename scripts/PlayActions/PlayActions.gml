@@ -31,7 +31,7 @@ function CardAction_IfThenPlay(_condition, _action): CardAction() constructor
     condition = _condition;
     action = _action;
     
-    run = function ()
+    run = function (actor)
     {
         actor.actionRunning = true;
         

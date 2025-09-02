@@ -28,16 +28,6 @@
           ],"flexDirection":0,"height":{"unit":3,"value":33.0,},"justifyContent":1,"name":"textCardSelect","nodeColour":4285985352,"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":190.0,},},
       ],"flexDirection":0,"gridX":16,"gridY":16,"justifyContent":1,"name":"lose_ui_layer","nodeColour":4282928882,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"duel_ui_layer","alignItems":2,"children":[
-        {"$GMRFlexPanel":"","%Name":"Racers","alignItems":2,"children":[
-            {"$GMRInstance":"v2","%Name":"inst_3E892EA5","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E892EA5","objectId":{"name":"oUiObjectCreator","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"properties":[
-                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oUiObjectCreator","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"propertyId":{"name":"object","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"oRacerDuelling",},
-                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oUiObjectCreator","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"propertyId":{"name":"uiLayer","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"UI_LAYER_DUEL",},
-              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":50.0,"y":86.0,},
-            {"$GMRInstance":"v2","%Name":"inst_13AE3F6B","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13AE3F6B","objectId":{"name":"oUiObjectCreator","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"properties":[
-                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oUiObjectCreator","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"propertyId":{"name":"object","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"oRacerDuellingEnemy",},
-                {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oUiObjectCreator","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"propertyId":{"name":"uiLayer","path":"objects/oUiObjectCreator/oUiObjectCreator.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"UI_LAYER_DUEL",},
-              ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":50.0,"y":18.0,},
-          ],"flexDirection":0,"height":{"unit":1,"value":100.0,},"justifyContent":1,"name":"Racers","nodeColour":4282942194,"positionTop":{"unit":2,"value":27.0,},"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":1,"value":100.0,},},
         {"$GMRFlexPanel":"","%Name":"EnemyDeck","alignItems":2,"children":[],"flexDirection":0,"height":{"unit":3,"value":96.0,},"justifyContent":1,"name":"EnemyDeck","nodeColour":4282970792,"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":64.0,},},
         {"$GMRFlexPanel":"","%Name":"PlayerResources","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"PlayerSpeed","alignItems":2,"children":[
@@ -187,7 +177,7 @@
         {"$GMRFlexPanel":"","%Name":"EnemyResourcesPanel","alignItems":2,"children":[
             {"$GMRSpriteGraphic":"v1","%Name":"graphic_66C0CE52","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_66C0CE52","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":-0.52,"scaleY":-1.0,"spriteId":{"name":"sprMetalBox","path":"sprites/sprMetalBox/sprMetalBox.yy",},"x":-278.0,"y":-196.0,},
           ],"flexDirection":0,"height":{"unit":3,"value":55.0,},"justifyContent":1,"name":"EnemyResourcesPanel","nodeColour":4286444104,"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":466.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"duel_ui_layer","nodeColour":4286444104,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
+      ],"flexDirection":0,"gridX":8,"gridY":8,"justifyContent":1,"name":"duel_ui_layer","nodeColour":4286444104,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
   ],
   "locked":false,
   "name":"RoomUI",

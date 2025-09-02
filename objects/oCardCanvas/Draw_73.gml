@@ -4,4 +4,7 @@ drawName();
 drawDesc();
 drawCosts();
 
-displayPlayability();
+if(!isDisplay)
+{
+    displayPlayability();
+}

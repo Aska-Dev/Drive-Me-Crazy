@@ -72,6 +72,11 @@ nextTurn = function ()
 
 endDuel = function ()
 {
+    instance_destroy(oRacerDuelling);
+    instance_destroy(oRacerDuellingEnemy);
+    
+    // Reset the player resources
+    oRaceController.player.resources.reset();
     // Reset the player deck
     oRaceController.player.deck.reset();
 }

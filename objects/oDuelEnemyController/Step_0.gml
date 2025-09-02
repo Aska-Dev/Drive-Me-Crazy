@@ -16,6 +16,7 @@ if(actor != undefined && actor.finished)
     }
     else
     {
+        card = oDuelController.enemy.deck.drawOne();
         spawnCard();
     }
 }
