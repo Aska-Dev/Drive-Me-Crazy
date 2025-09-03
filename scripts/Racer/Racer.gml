@@ -3,6 +3,8 @@ function Racer() constructor
     /// PROPERTIES
     name = "default";
     
+    sprite = sprCarInferno;
+    
     deck = new CardDeck();
     hand = new RacerHand();
     

@@ -25,17 +25,17 @@ spawnRewardCardCanvases = function ()
 /// @param {Struct.Card} _card
 isUnique = function (_card)
 {
-    if(card1 != undefined && _card.cId == card1.cId)
+    if(card1 != undefined && _card.name == card1.name)
     {
         return false;
     }
     
-    if(card2 != undefined && _card.cId == card2.cId)
+    if(card2 != undefined && _card.name == card2.name)
     {
         return false;
     }
     
-    if(card3 != undefined && _card.cId == card3.cId)
+    if(card3 != undefined && _card.name == card3.name)
     {
         return false;
     }

@@ -11,7 +11,7 @@ player.deck.cards = [
     new Card_Hochschalten(),
     new Card_Ausbremsen(),
     new Card_Schulterblick(), 
-    new Card_GangWechseln()
+    new Card_GangWechseln(),
 ];
 
 /// METHODS
@@ -32,8 +32,12 @@ nextEvent = function ()
 {
     laps++;
     
-    var nextEvent = getNextEvent();
-    room_goto(nextEvent);
+    // Enforce pit stop
+    room_goto(rmEventPitstop);
+    return;
+    
+    //var nextEvent = getNextEvent();
+    //room_goto(nextEvent);
 }
 
 nextEvent();

@@ -40,7 +40,7 @@ global.Tier2Cards =
     Card_PerfekterStart,
     Card_UebungMachtDenMeister,
     Card_Automatik,
-    //Card_Vollgetankt
+    Card_Vollgetankt
 ]
 
 global.Tier3Cards = 

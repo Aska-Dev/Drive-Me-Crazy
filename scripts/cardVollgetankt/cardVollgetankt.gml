@@ -7,7 +7,7 @@ function Card_Vollgetankt() : Card() constructor
     
     actions = 
     [
-        new CardAction_DiscardLater(self),
         new CardAction_SelectCardAnd(new CardAction_PlayCardForFree(undefined)),
+        new CardAction_Discard(self)
     ]  
 }
