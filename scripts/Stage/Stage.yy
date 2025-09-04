@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Stage",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Stage",
+  "parent":{
+    "name":"Race",
+    "path":"folders/Race.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

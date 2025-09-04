@@ -33,11 +33,11 @@ nextEvent = function ()
     laps++;
     
     // Enforce pit stop
-    room_goto(rmEventPitstop);
-    return;
+    //room_goto(rmEventPitstop);
+    //return;
     
-    //var nextEvent = getNextEvent();
-    //room_goto(nextEvent);
+    var nextEvent = getNextEvent();
+    room_goto(nextEvent);
 }
 
 nextEvent();

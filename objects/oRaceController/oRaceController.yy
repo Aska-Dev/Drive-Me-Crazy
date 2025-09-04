@@ -8,8 +8,8 @@
   "name":"oRaceController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controller",
-    "path":"folders/Controller.yy",
+    "name":"Race",
+    "path":"folders/Race.yy",
   },
   "parentObjectId":null,
   "persistent":true,
