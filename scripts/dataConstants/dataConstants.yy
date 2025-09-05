@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"cardUebungMachtDenMeister",
+  "%Name":"dataConstants",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cardUebungMachtDenMeister",
+  "name":"dataConstants",
   "parent":{
-    "name":"Tier 3",
-    "path":"folders/Cards/Tier 3.yy",
+    "name":"Common",
+    "path":"folders/Common.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

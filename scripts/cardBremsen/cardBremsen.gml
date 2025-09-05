@@ -4,11 +4,18 @@ function Card_Bremsen() : Card() constructor
     desc = "Du erhältst 3 [sprCardIconControl]"
     
     cost = new CardCost(1);
-    sprite = sprCardControl;
+    
+    tier = CARD_TIERS.TIER_2;
+    type = CARD_TYPE.CONTROL;
     
     actions =
     [
         new CardAction_ModifyControl(RACERS.PLAYER, 3),
         new CardAction_Discard(self)
     ]
+    
+    renew = function ()
+    {
+        return new Card_Bremsen();
+    }
 }

@@ -11,19 +11,15 @@ function Racer() constructor
     duelStartDrawAmount = 4;
     turnStartDrawAmount = 3;
     
+    reaction = 3;
+    
     resources = new RacerResources();
     
     /// METHODS
 }
 
-function EnemyRacer() : Racer() constructor 
+function EnemyRacer(_enemyDeck) : Racer() constructor 
 {
-    setDeck = function ()
-    {
-        var selection = irandom_range(0, array_length(global.enemyDecks) - 1);
-        return new global.enemyDecks[selection]();
-    }
-    
     setSprite = function ()
     {
         var sprites = 
@@ -39,6 +35,7 @@ function EnemyRacer() : Racer() constructor
         return sprites[spriteRoll];
     }
     
-    deck = setDeck();
+    deck = _enemyDeck;
+    deck.reset();
     deck.shuffle();
 }

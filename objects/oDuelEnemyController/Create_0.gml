@@ -25,6 +25,7 @@ spawnCard = function ()
     with(canvas)
     {
         move_towards_point(x, ENEMY_CARD_DESTINATION_Y, 6);
+        isDisplay = true;
         active = false;
     }
 

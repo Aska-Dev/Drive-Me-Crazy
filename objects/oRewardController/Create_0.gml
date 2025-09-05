@@ -56,26 +56,32 @@ getRewardCard = function ()
         if(tierRoll >= 1 && tierRoll < 6)
         {
             // TIER 1
-            var amount = array_length(global.Tier1Cards);
+            var tier1Cards = archive("Cards").where_equal("tier", CARD_TIERS.TIER_1);
+            
+            var amount = array_length(tier1Cards);
             var cardRoll = irandom_range(0, amount-1);
             
-            card = new global.Tier1Cards[cardRoll]();
+            card = tier1Cards[cardRoll].renew();
         }
         else if(tierRoll >= 6 && tierRoll < 10)    
         {
             // TIER 2
-            var amount = array_length(global.Tier2Cards);
+            var tier2Cards = archive("Cards").where_equal("tier", CARD_TIERS.TIER_2);
+            
+            var amount = array_length(tier2Cards);
             var cardRoll = irandom_range(0, amount-1);
             
-            card = new global.Tier2Cards[cardRoll]();
+            card = tier2Cards[cardRoll].renew();
         }
         else
         {
             // TIER 3
-            var amount = array_length(global.Tier3Cards);
+            var tier3Cards = archive("Cards").where_equal("tier", CARD_TIERS.TIER_3);
+            
+            var amount = array_length(tier3Cards);
             
             var cardRoll = irandom_range(0, amount-1);
-            card = new global.Tier3Cards[cardRoll]();
+            card = tier3Cards[cardRoll].renew();
         }
     }
     until (isUnique(card));

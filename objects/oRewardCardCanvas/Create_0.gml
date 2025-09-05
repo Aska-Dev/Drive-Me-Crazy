@@ -12,7 +12,7 @@ active = true;
 
 
 // SET THE SPRITE TEMPLATE
-sprite_index = card.sprite;
+sprite_index = card.getSprite();
 
 /// SIZE
 size = CARD_CANVAS_SIZE;
@@ -31,6 +31,7 @@ drawName = function ()
     var textX = x;
     
     scribble(card.name)
+        .blend(c_white, 1)
         .align(fa_center, fa_middle)
         .scale_to_box(sprite_width - sprite_width / 4, 25)
         .draw(textX, textY);
@@ -42,6 +43,7 @@ drawDesc = function ()
     var textX = x;   
      
     scribble(card.desc)
+        .blend(c_white, 1)
         .align(fa_center, fa_middle)
         .scale(0.6)
         .fit_to_box(originalSpriteWidth - originalSpriteWidth / 4, sprite_height * 0.6)
@@ -78,6 +80,7 @@ drawCosts = function ()
     if(draw)
     {
         scribble(costText)
+            .blend(c_white, 1)
             .align(fa_center, fa_middle)
             .scale(0.5)
             .draw(textX, textY);

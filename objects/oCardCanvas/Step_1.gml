@@ -3,4 +3,4 @@ clicking = hovering && mouse_check_button_pressed(mb_left);
 
 active = oDuelController.activeRacer == RACERS.PLAYER || oDuelController.currentPhase = DUEL_PHASES.SELECTING_CARD_FOR_ACTION;
 
-isPlayable = card.isPlayable(oRaceController.player);
+isPlayable = card.isPlayable(oRaceController.player) || isDisplay;

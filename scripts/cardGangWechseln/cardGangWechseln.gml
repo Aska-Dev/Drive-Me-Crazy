@@ -4,7 +4,9 @@ function Card_GangWechseln() : Card() constructor
     desc = "Lege eine Karte ab und ziehe eine neue Karte nach"
     
     cost = new CardCost(0, 1, 0, true);
-    sprite = sprCardControl;
+    
+    tier = CARD_TIERS.TIER_1;
+    type = CARD_TYPE.CONTROL;
     
     actions =
     [
@@ -12,4 +14,9 @@ function Card_GangWechseln() : Card() constructor
         new CardAction_DrawCards(1),
         new CardAction_Discard(self)
     ]
+    
+    renew = function ()
+    {
+        return new Card_GangWechseln();
+    }
 }

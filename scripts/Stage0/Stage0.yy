@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"cardUebungMachtDenMeister",
+  "%Name":"Stage0",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cardUebungMachtDenMeister",
+  "name":"Stage0",
   "parent":{
-    "name":"Tier 3",
-    "path":"folders/Cards/Tier 3.yy",
+    "name":"Decks",
+    "path":"folders/EnemyCards/Decks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

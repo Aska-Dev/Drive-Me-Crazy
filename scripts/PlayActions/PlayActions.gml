@@ -26,10 +26,10 @@ function CardAction_AdditionalEnemyTurn(_amount): CardAction() constructor
     }
 }
 
-function CardAction_IfThenPlay(_condition, _action): CardAction() constructor 
+function CardAction_IfThenPlay(_condition, _actions): CardAction() constructor 
 {
     condition = _condition;
-    action = _action;
+    actions = _actions;
     
     run = function (actor)
     {
@@ -37,7 +37,10 @@ function CardAction_IfThenPlay(_condition, _action): CardAction() constructor
         
         if(condition())
         {
-            action.run(actor);
+            for(var i = 0; i < array_length(actions); i++)
+            {
+                actions[i].run(actor);
+            }
         }
         else
         {

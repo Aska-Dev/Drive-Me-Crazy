@@ -2,7 +2,7 @@
 // PROPERTIES
 
 // Create the enemy racer struct
-enemy = new EnemyRacer();
+enemy = new EnemyRacer(oRaceController.stage.getEnemy());
 
 // Set the win condition of the race
 winCondition = new DuelWinCondition(10); 

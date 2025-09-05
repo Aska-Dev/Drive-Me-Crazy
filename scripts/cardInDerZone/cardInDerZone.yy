@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cardInDerZone",
   "parent":{
-    "name":"Tier 1",
-    "path":"folders/Cards/Tier 1.yy",
+    "name":"Tier 2",
+    "path":"folders/Cards/Tier 2.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

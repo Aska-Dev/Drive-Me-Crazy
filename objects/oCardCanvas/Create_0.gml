@@ -15,7 +15,7 @@ isPlayable = true;
 notPlayableTextAlpha = 0.6;
 
 // SET THE SPRITE TEMPLATE
-sprite_index = card.sprite;
+sprite_index = card.getSprite();
 
 /// SIZE
 size = CARD_CANVAS_SIZE;

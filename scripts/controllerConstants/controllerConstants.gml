@@ -27,3 +27,10 @@ enum RACERS
     PLAYER,
     ENEMY
 }
+
+enum RACE_EVENT_TYPES
+{
+    DUEL,
+    TRACK_DANGER,
+    TRACK_EVENT
+}

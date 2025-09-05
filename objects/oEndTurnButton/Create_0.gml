@@ -5,8 +5,8 @@ image_xscale = xSize;
 
 var cameraWidth = camera_get_view_width(view_camera[0]);
 
-x = cameraWidth * 0.74 - sprite_width * 0.46;
-y = room_height * 0.62
+x = cameraWidth * 0.987 - sprite_width * 0.46;
+y = room_height * 0.59
 
 buttonText = "Zug beenden"
 active = true;

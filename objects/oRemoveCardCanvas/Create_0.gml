@@ -24,7 +24,7 @@ originalSpriteHeight = sprite_height;
 /// @param {Struct.Card} _card
 setCard = function (_card)
 {
-    sprite_index = _card.sprite;
+    sprite_index = _card.getSprite();
     card = _card;
 }
 

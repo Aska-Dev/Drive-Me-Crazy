@@ -1,6 +1,9 @@
-laps = 0;
+// #############################################
+// PROPERTIES
 
 player = new Racer();
+stage = new Stage(0);
+
 // SETUP START DECK
 player.deck.cards = [
     new Card_Fahrtraining(),
@@ -14,30 +17,24 @@ player.deck.cards = [
     new Card_GangWechseln(),
 ];
 
-/// METHODS
-
-getNextEvent = function ()
-{
-    if(laps % 3 == 0)
-    {
-        return BoxStop;
-    }
-    else
-    {
-        return rmDuel;
-    }
-}
+// #############################################
+// METHODS
 
 nextEvent = function ()
 {
-    laps++;
+    if(stage.isCleared())
+    {
+        stage = new Stage(stage.level + 1);
+    }
     
-    // Enforce pit stop
-    //room_goto(rmEventPitstop);
-    //return;
+    var event = stage.nextEvent()
     
-    var nextEvent = getNextEvent();
-    room_goto(nextEvent);
+    if(event == RACE_EVENT_TYPES.DUEL)
+    { 
+        event = rmDuel;
+    }
+    
+    room_goto(event);
 }
 
 nextEvent();

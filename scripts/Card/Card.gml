@@ -10,12 +10,18 @@ function Card() constructor
     
     cost = new CardCost();
     
-    sprite = sprCardNeutral;
+    tier = CARD_TIERS.TIER_0;
+    type = CARD_TYPE.NEUTRAL;
     
     actorRef = undefined;
     canvasRef = undefined;
     
     /// METHODS
+    
+    renew = function ()
+    {
+        return new Card();
+    }
     
     /// @param {Struct.Racer} racer
     /// @return {Bool}
@@ -50,5 +56,23 @@ function Card() constructor
         racer.resources.speed -= cost.speed;
         racer.resources.control -= cost.control;
         racer.resources.focus -= cost.focus;
+    }
+    
+    getSprite = function ()
+    {
+        switch(type)
+        {
+            case CARD_TYPE.NEUTRAL:
+                return sprCardNeutral;
+            
+            case CARD_TYPE.SPEED:
+                return sprCardSpeed;
+            
+            case CARD_TYPE.CONTROL:
+                return sprCardControl;
+            
+            case CARD_TYPE.FOCUS:
+                return sprCardFocus;
+        }
     }
 }
