@@ -13,7 +13,6 @@
     {"name":"inst_3DA1CBD4","path":"rooms/BoxStop/BoxStop.yy",},
     {"name":"inst_66C3D3BB","path":"rooms/BoxStop/BoxStop.yy",},
     {"name":"inst_15402086","path":"rooms/BoxStop/BoxStop.yy",},
-    {"name":"inst_6CA45F6E","path":"rooms/BoxStop/BoxStop.yy",},
     {"name":"inst_1E289A25","path":"rooms/BoxStop/BoxStop.yy",},
     {"name":"inst_7937CBB8","path":"rooms/BoxStop/BoxStop.yy",},
   ],
@@ -41,7 +40,6 @@
         {"$GMRInstance":"v2","%Name":"inst_15402086","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15402086","objectId":{"name":"oRemoveCardCanvas","path":"objects/oRemoveCardCanvas/oRemoveCardCanvas.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oRemoveCardCanvas","path":"objects/oRemoveCardCanvas/oRemoveCardCanvas.yy",},"propertyId":{"name":"pos","path":"objects/oRemoveCardCanvas/oRemoveCardCanvas.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":274.0,},
-        {"$GMRInstance":"v2","%Name":"inst_6CA45F6E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6CA45F6E","objectId":{"name":"oContinueButton","path":"objects/oContinueButton/oContinueButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":1.3,"x":398.0,"y":384.0,},
         {"$GMRInstance":"v2","%Name":"inst_1E289A25","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E289A25","objectId":{"name":"oTurnPageRightButton","path":"objects/oTurnPageRightButton/oTurnPageRightButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":752.0,"y":272.0,},
         {"$GMRInstance":"v2","%Name":"inst_7937CBB8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7937CBB8","objectId":{"name":"oTurnPageLeftButton","path":"objects/oTurnPageLeftButton/oTurnPageLeftButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":48.0,"y":272.0,},
       ],"layers":[],"name":"Canvases","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

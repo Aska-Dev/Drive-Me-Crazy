@@ -9,9 +9,12 @@ function Racer() constructor
     hand = new RacerHand();
     
     duelStartDrawAmount = 4;
-    turnStartDrawAmount = 3;
+    turnStartDrawAmount = duelStartDrawAmount;
     
-    reaction = 3;
+    turnEndDiscard = true;
+    
+    baseReaction = 3;
+    reaction = baseReaction;
     
     resources = new RacerResources();
     

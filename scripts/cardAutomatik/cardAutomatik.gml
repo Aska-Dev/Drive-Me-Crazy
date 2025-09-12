@@ -3,7 +3,7 @@ function Card_Automatik() : Card() constructor
     name = "Automatik";
     desc = "Lege eine Karte ab und ziehe eine neue Karte nach"
     
-    cost = new CardCost(0, 0, 0, true);
+    cost = new CardCost(0, 0, 0, 0, true);
     
     tier = CARD_TIERS.TIER_2;
     type = CARD_TYPE.NEUTRAL;

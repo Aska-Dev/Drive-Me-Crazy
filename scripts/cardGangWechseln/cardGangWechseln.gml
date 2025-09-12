@@ -3,10 +3,11 @@ function Card_GangWechseln() : Card() constructor
     name = "Gang wechseln";
     desc = "Lege eine Karte ab und ziehe eine neue Karte nach"
     
-    cost = new CardCost(0, 1, 0, true);
+    cost = new CardCost(0, 0, 0, 1, true);
     
     tier = CARD_TIERS.TIER_1;
-    type = CARD_TYPE.CONTROL;
+    type = CARD_TYPE.NEUTRAL;
+    type = CARD_TYPE.NEUTRAL;
     
     actions =
     [

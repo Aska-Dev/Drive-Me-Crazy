@@ -60,6 +60,12 @@ nextTurn = function ()
 {
     if(activeRacer == RACERS.PLAYER)
     {
+        // Discard all player cards
+        if(oRaceController.player.turnEndDiscard)
+        {
+            oDuelPlayerController.discardHand();
+        }
+        
         activeRacer = RACERS.ENEMY;
         instance_create_layer(-10, -10, "Controller", oDuelEnemyController);
     }
@@ -82,4 +88,4 @@ endDuel = function ()
 }
 
 // #############################################
-// DEBUG_ TOOLING
+// RUN AT CREATION

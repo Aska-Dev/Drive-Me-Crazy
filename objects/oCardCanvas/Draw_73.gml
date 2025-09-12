@@ -4,4 +4,6 @@ drawName();
 drawDesc();
 drawCosts();
 
+drawReactionCosts();
+
 displayPlayability();

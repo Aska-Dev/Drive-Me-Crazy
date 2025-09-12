@@ -15,5 +15,5 @@ action = function ()
 {
     audio_play_sound(sndSfxClick, 100, false);
     oDuelController.nextTurn();
-    //active = false;
+    active = false;
 }

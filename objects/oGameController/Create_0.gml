@@ -1,14 +1,13 @@
-// INIT GAME
-global.debug = false;
-randomize();
+// #############################################
+// PROPERTIES
 
-global.enemyDecks = 
-[
-    EnemyDeck_ControlToSpeed,
-    EnemyDeck_SlowAndSteady,
-    EnemyDeck_Hinterhaeltig,
-    EnemyDeck_FastAndFurious
-]
+isPaused = false;
+isPausable = true;
+pauseSeq = undefined;
+
+currentTrack = undefined; 
+
+global.debug = false;
 
 global.IDs = [];
 
@@ -19,15 +18,8 @@ global.gameTracks =
     sndMusicTrack3,
 ]
 
-// INIT LIBS
-/// INIT ARCHIVE
-InitData();
-
-/// INIT SCRIBBLE 
-scribble_font_set_default("fntBasic");
-
-// AFTER CREATION
-currentTrack = undefined; 
+// #############################################
+// METHODS
 
 playMusic = function ()
 {
@@ -41,5 +33,48 @@ playMusic = function ()
     
     audio_play_sound(currentTrack, 100, false);
 }
+
+switchPause = function ()
+{
+    if(!isPausable)    
+    {
+        return;
+    }
+    
+    if(isPaused)
+    {
+        layer_set_visible(UI_LAYER_PAUSE_MENU, false);
+        
+        instance_activate_all();
+        
+        isPaused = false;
+    }
+    else
+    {
+        instance_deactivate_all(true);
+
+        layer_set_visible(UI_LAYER_PAUSE_MENU, true);
+        
+        isPaused = true;
+    }
+}
+
+
+// #############################################
+// INIT GAME
+
+randomize();
+
+// #############################################
+// INIT LIBS
+
+// ARCHIVE
+InitData();
+
+// SCRIBBLE 
+scribble_font_set_default("fntBasic");
+
+// #############################################
+// RUN AFTER CREATION
 
 show_debug_overlay(global.debug);

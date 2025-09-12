@@ -1,9 +1,9 @@
 function Card_Konzentration() : Card() constructor 
 {
     name = "Konzentration";
-    desc = "Du erhältst 1 [sprCardIconFocus]"
+    desc = "Resource\nDu erhältst 1 [sprCardIconFocus]"
     
-    cost = new CardCost()
+    cost = new CardCost(0, 0, 0, 1)
     
     tier = CARD_TIERS.TIER_1;
     type = CARD_TYPE.NEUTRAL;

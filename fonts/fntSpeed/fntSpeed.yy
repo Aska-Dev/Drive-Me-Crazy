@@ -146,7 +146,10 @@
   "sdfSpread":2,
   "size":25.0,
   "styleName":"Italic",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":true,
 }

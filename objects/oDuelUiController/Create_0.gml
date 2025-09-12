@@ -21,13 +21,21 @@ displayResources = function ()
     var pControl = oRaceController.player.resources.control;
     var pFocus = oRaceController.player.resources.focus;
     
+    var pReaction = oRaceController.player.reaction;
+    
     var lblSpeed = layer_text_get_id(UI_LAYER_DUEL, "playerSpeedLabel")
     var lblControl = layer_text_get_id(UI_LAYER_DUEL, "playerControlLabel")
     var lblFocus = layer_text_get_id(UI_LAYER_DUEL, "playerFocusLabel")
     
+    var lblReaction = layer_text_get_id(UI_LAYER_DUEL, "playerReactionLabel")
+    var lblReaction2 = layer_text_get_id(UI_LAYER_DUEL, "playerReactionLabel2")
+    
     layer_text_text(lblSpeed, pSpeed);
     layer_text_text(lblControl, pControl);
     layer_text_text(lblFocus, pFocus);
+    
+    layer_text_text(lblReaction, pReaction);
+    layer_text_text(lblReaction2, pReaction);
 }
 
 displayEnemyResources = function ()

@@ -33,10 +33,15 @@ preparePlayerForDuel = function ()
 
 startTurn = function ()
 {
+    // Activate end turn button
     oEndTurnButton.active = true;
-    drawCards(oRaceController.player.turnStartDrawAmount);
     
-     oDuelController.currentPhase =DUEL_PHASES.SELECTING_CARD_TO_PLAY;
+    // Draw turn cards
+    drawCards(oRaceController.player.turnStartDrawAmount);
+    // Reset reactios
+    oRaceController.player.reaction = oRaceController.player.baseReaction;
+    
+    oDuelController.currentPhase = DUEL_PHASES.SELECTING_CARD_TO_PLAY;
 }
 
 /// @param {Struct.Card} card
@@ -70,6 +75,26 @@ playCard = function (card, checkCosts = true)
     
     var actor = instance_create_layer(-10, -10, "Controller", oCardActor, {card: card});
     array_push(acticeActors, actor);
+}
+
+/// @param {Struct.Card} card
+discardFromHand = function (card)
+{
+    oRaceController.player.deck.discard(card);
+    oRaceController.player.hand.remove(card);
+    
+    instance_destroy(card.canvasRef)
+}
+
+discardHand = function ()
+{
+    var cards = [];
+    array_copy(cards, 0, oRaceController.player.hand.cards, 0, array_length(oRaceController.player.hand.cards));
+    
+    for(var i = 0; i < array_length(cards); i++)
+    {
+        discardFromHand(cards[i]);
+    }
 }
 
 // #############################################

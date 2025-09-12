@@ -1,3 +1,8 @@
+if(onUI)
+{
+    exit;
+}
+
 if(active)
 {
     scribble(buttonText)

@@ -3,3 +3,4 @@
 #macro UI_LAYER_LOSE "lose_ui_layer"
 #macro UI_LAYER_MENU "menu_ui_layer"
 #macro UI_LAYER_BOX "box_ui_layer"
+#macro UI_LAYER_PAUSE_MENU "pause_menu"

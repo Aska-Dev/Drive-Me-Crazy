@@ -94,18 +94,38 @@ drawCosts = function ()
     
     if(draw)
     {
-         var alpha = 1;
+        var alpha = 1;
         if(!isPlayable)
         {
             alpha = notPlayableTextAlpha;
         }
     
-        
         scribble(costText)
             .blend(c_white, alpha)
             .align(fa_center, fa_middle)
             .scale(0.5)
             .draw(textX, textY);
+    }
+}
+
+drawReactionCosts = function ()
+{
+    // Draw reaction icon
+    var iconPosX = x - (sprite_width / 2) + (0.35 * sprite_get_width(sprReactionIconCardCanvas) * size)
+    var iconPosYStart = y - sprite_height * 0.15
+    
+    var gapSize = sprite_height * 0.1;
+    
+    var blend = c_white;
+    if(!isPlayable)
+    {
+        blend = c_gray;
+    }
+    
+    for(var i = 0; i < card.cost.reaction; i++)
+    {
+        var iconY = iconPosYStart + i * (gapSize + sprite_get_height(sprReactionIconCardCanvas) * size)
+        draw_sprite_ext(sprReactionIconCardCanvas, 0, iconPosX, iconY, size, size, 0, blend, 1);
     }
 }
 

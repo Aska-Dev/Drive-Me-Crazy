@@ -42,6 +42,11 @@ function Card() constructor
             return false;
         }
         
+        if(racer.reaction < cost.reaction)
+        {
+            return false;
+        }
+        
         if(cost.needsOtherCards && array_length(racer.hand.cards) <= 1)
         {
             return false;
@@ -56,6 +61,8 @@ function Card() constructor
         racer.resources.speed -= cost.speed;
         racer.resources.control -= cost.control;
         racer.resources.focus -= cost.focus;
+        
+        racer.reaction -= cost.reaction;
     }
     
     getSprite = function ()

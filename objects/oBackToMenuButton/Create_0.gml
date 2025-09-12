@@ -5,6 +5,11 @@ buttonText = "Zum Menü"
 
 action = function ()
 {
+    if(oGameController.isPaused)
+    {
+        oGameController.switchPause();
+    }
+    
     audio_play_sound(sndSfxClick, 100, false);
-    room_goto(Homemenu);
+    game_restart();
 }

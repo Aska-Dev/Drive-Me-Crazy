@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"cardBeschleunigen",
+  "%Name":"cardRueckspiegel",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"cardBeschleunigen",
+  "name":"cardRueckspiegel",
   "parent":{
     "name":"Tier 1",
     "path":"folders/Cards/Tier 1.yy",
